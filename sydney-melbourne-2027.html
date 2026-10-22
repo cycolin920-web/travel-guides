@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>成都-悉尼-墨尔本 · 10日度假攻略</title>
+  <meta name="description" content="2027年春节成都出发，悉尼-墨尔本10日豪华度假攻略。入住Park Hyatt，spa水疗、恒温泳池、大洋路、企鹅归巢，详细交通签证指南。"/>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: "Microsoft YaHei", sans-serif; line-height:1.7; color:#333; background:#f8f9fa; }
+    .container { max-width:1200px; margin:0 auto; padding:20px; }
+    
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:#fff; padding:80px 20px; text-align:center; }
+    .hero h1 { font-size:2.5rem; margin-bottom:10px; }
+    .hero .dates { font-size:1.2rem; opacity:0.9; }
+    .hero .nav { margin-top:30px; }
+    .hero .nav a { color:#fff; margin:0 15px; text-decoration:none; padding:8px 16px; border:1px solid rgba(255,255,255,0.5); border-radius:20px; transition:0.3s; }
+    .hero .nav a:hover { background:rgba(255,255,255,0.2); }
+    
+    /* Section */
+    .section { background:#fff; margin:30px 0; padding:40px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); }
+    .s-head { display:flex; align-items:center; margin-bottom:25px; border-bottom:2px solid #667eea; padding-bottom:15px; }
+    .s-head .idx { background:#667eea; color:#fff; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-right:15px; }
+    .s-head h2 { font-size:1.8rem; color:#333; }
+    
+    /* Callout */
+    .callout { background:#e3f2fd; border-left:4px solid #2196F3; padding:15px 20px; margin:20px 0; border-radius:6px; }
+    .callout.warn { background:#fff3e0; border-left-color:#ff9800; }
+    
+    /* 总览表 */
+    .overview-grid { display:grid; grid-template-columns:80px 1fr 200px; gap:1px; background:#ddd; margin:20px 0; }
+    .overview-grid > div { background:#fff; padding:12px; }
+    .overview-grid .head { background:#667eea; color:#fff; font-weight:bold; }
+    
+    /* Tabs */
+    .tabs { display:flex; gap:10px; margin:20px 0; flex-wrap:wrap; }
+    .tab { background:#f5f5f5; border:none; padding:12px 20px; border-radius:8px 8px 0 0; cursor:pointer; font-size:0.95rem; transition:0.3s; }
+    .tab.active { background:#667eea; color:#fff; }
+    .tab:hover { background:#e0e0e0; }
+    .tab.active:hover { background:#5568d3; }
+    
+    /* Panel */
+    .panel { display:none; }
+    .panel.active { display:block; }
+    
+    /* Timeline */
+    .ti { margin:25px 0; padding-left:20px; border-left:3px solid #e0e0e0; position:relative; }
+    .ti .tm { position:absolute; left:-80px; top:0; font-size:0.9rem; color:#666; font-weight:bold; width:70px; text-align:right; }
+    .ti h4 { font-size:1.2rem; color:#333; margin-bottom:8px; }
+    .ti p { color:#555; margin-bottom:10px; }
+    .ti .lks { margin-top:10px; }
+    .ti .lk { display:inline-block; margin-right:15px; color:#2196F3; text-decoration:none; font-size:0.9rem; }
+    .ti .lk:hover { text-decoration:underline; }
+    .ti.hi { background:#f0f7ff; padding:15px; border-radius:8px; border-left-color:#2196F3; }
+    
+    /* 景点表 */
+    table.sights { width:100%; border-collapse:collapse; margin:20px 0; }
+    table.sights th { background:#667eea; color:#fff; padding:12px; text-align:left; }
+    table.sights td { padding:12px; border-bottom:1px solid #eee; }
+    table.sights tr:hover { background:#f5f5f5; }
+    
+    /* 地图 */
+    #map { height:450px; border-radius:8px; margin:20px 0; }
+    
+    /* Footer */
+    footer { text-align:center; padding:30px; color:#666; font-size:0.9rem; }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+
+<div class="hero">
+  <h1>成都-悉尼-墨尔本 · 10日度假攻略</h1>
+  <div class="dates">2027年2月5日-14日（春节假期）</div>
+  <div class="nav">
+    <a href="#overview">行程总览</a>
+    <a href="#plan">逐日行程</a>
+    <a href="#hotels">酒店详情</a>
+    <a href="#sights">景点汇总</a>
+    <a href="#tips">实用贴士</a>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- 01 行程总览 -->
+<section id="overview" class="section">
+  <div class="s-head"><span class="idx">01</span><h2>行程总览</h2></div>
+  <div class="callout">
+    <b>节奏定位：</b>豪华度假型 — 以酒店设施体验为主（泳池/spa/海港景观），观光压缩到3个半天，留足时间享受柏悦的服务与环境。
+  </div>
+  <div class="overview-grid">
+    <div class="head">日期</div><div class="head">主题</div><div class="head">城市/酒店</div>
+    <div>02月05日</div><div>抵达悉尼 · 入住柏悦</div><div>悉尼</div>
+    <div>02月06日</div><div>酒店度假日 · Spa与泳池</div><div>悉尼</div>
+    <div>02月07日</div><div>歌剧院 · 海港巡游</div><div>悉尼</div>
+    <div>02月08日</div><div>邦迪海滩 · 悠闲半日</div><div>悉尼</div>
+    <div>02月09日</div><div>悉尼-墨尔本 · 转场日</div><div>悉尼→墨尔本</div>
+    <div>02月10日</div><div>墨尔本度假日 · 泳池与水疗</div><div>墨尔本</div>
+    <div>02月11日</div><div>大洋路一日游 · 十二门徒</div><div>墨尔本周边</div>
+    <div>02月12日</div><div>菲利普岛 · 企鹅归巢</div><div>墨尔本周边</div>
+    <div>02月13日</div><div>市区漫步 · 联邦广场</div><div>墨尔本</div>
+    <div>02月14日</div><div>返程日 · 墨尔本-成都</div><div>墨尔本→成都</div>
+  </div>
+</section>
+
+<!-- 02 逐日行程 -->
+<section id="plan" class="section">
+  <div class="s-head"><span class="idx">02</span><h2>逐日行程</h2></div>
+  <div class="tabs" id="dayTabs">
+    <button class="tab active" data-day="1">02月05日 周三 · 抵达悉尼</button>
+    <button class="tab" data-day="2">02月06日 周四 · 酒店度假日</button>
+    <button class="tab" data-day="3">02月07日 周五 · 歌剧院</button>
+    <button class="tab" data-day="4">02月08日 周六 · 邦迪海滩</button>
+    <button class="tab" data-day="5">02月09日 周日 · 悉尼-墨尔本</button>
+    <button class="tab" data-day="6">02月10日 周一 · 墨尔本度假日</button>
+    <button class="tab" data-day="7">02月11日 周二 · 大洋路一日游</button>
+    <button class="tab" data-day="8">02月12日 周三 · 菲利普岛</button>
+    <button class="tab" data-day="9">02月13日 周四 · 市区漫步</button>
+    <button class="tab" data-day="10">02月14日 周五 · 返程日</button>
+  </div>
+  <div class="panel active" data-panel="1">
+    <div class="callout"><b>今日主题：</b>抵达悉尼 · 入住柏悦</div>
+    <div class="ti">
+      <div class="tm">全天</div>
+      <h4>✈️ 成都-悉尼航班</h4>
+      <p>川航3U8915或国航直飞，飞行约10.5小时，时差+3小时</p>
+    </div>
+    <div class="ti">
+      <div class="tm">下午</div>
+      <h4>🏨 入住 Park Hyatt Sydney</h4>
+      <p>办理入住，海港景观客房，俯瞰歌剧院与海港大桥</p>
+      <div class="lks"><a class="lk" href="https://www.hyatt.com/park-hyatt/zh-CN/sydph-park-hyatt-sydney" target="_blank">📍 酒店官网</a></div>
+    </div>
+    <div class="ti">
+      <div class="tm">傍晚</div>
+      <h4>🌅 岩石区漫步</h4>
+      <p>酒店步行范围内，历史街区，环形码头日落</p>
+    </div>
+  </div>
+  <div class="panel" data-panel="2">
+    <div class="callout"><b>今日主题：</b>酒店度假日 · Spa与泳池</div>
+    <div class="ti">
+      <div class="tm">08:00-10:00</div>
+      <h4>🍳 The Living Room 早餐</h4>
+      <p>酒店海港景观餐厅，含早套餐建议提前预订</p>
+    </div>
+    <div class="ti hi">
+      <div class="tm">10:30-12:30</div>
+      <h4>💆 The Spa 水疗体验</h4>
+      <p>提前1天预约，La Mer护理或iKOU疗法，单次90-120分钟</p>
+      <div class="lks"><a class="lk" href="https://www.parkhyattsydneyspa.com/treatments" target="_blank">📞 预约</a></div>
+    </div>
+    <div class="ti hi">
+      <div class="tm">14:00-17:00</div>
+      <h4>🏊 室内恒温泳池</h4>
+      <p>酒店泳池开放至晚21:00，海港景观落地窗</p>
+    </div>
+    <div class="ti">
+      <div class="tm">19:00</div>
+      <h4>🍽️ The Dining Room 晚餐</h4>
+      <p>现代澳洲料理，建议提前订位</p>
+    </div>
+  </div>
+  <div class="panel" data-panel="3">
+    <div class="callout"><b>今日主题：</b>歌剧院 · 海港巡游</div>
+    <div class="ti hi">
+      <div class="tm">09:00-11:00</div>
+      <h4>🏊 泳池与早餐</h4>
+      <p>酒店设施自由活动</p>
+    </div>
+    <div class="ti">
+      <div class="tm">11:30-13:00</div>
+      <h4>🎭 悉尼歌剧院导览</h4>
+      <p>步行5分钟，1小时中文导览，需官网提前订票约AUD 42</p>
+      <div class="lks"><a class="lk" href="https://www.sydneyoperahouse.com/" target="_blank">🎫 官网订票</a></div>
+    </div>
+    <div class="ti">
+      <div class="tm">15:00-17:00</div>
+      <h4>⛵ 海港巡游（可选）</h4>
+      <p>环形码头出发，2小时海港巡游含下午茶</p>
+    </div>
+    <div class="ti">
+      <div class="tm">18:00</div>
+      <h4>🌅 酒店露台晚餐</h4>
+      <p>返回酒店，海港日落</p>
+    </div>
+  </div>
+  <div class="panel" data-panel="4">
+    <div class="callout"><b>今日主题：</b>邦迪海滩 · 悠闲半日</div>
+    <div class="ti">
+      <div class="tm">08:30-10:00</div>
+      <h4>🚇 前往邦迪海滩</h4>
+      <p>Circular Quay站→Bondi Junction站（T4线），换333/380公交15分钟到海滩，总耗时约45分钟</p>
+    </div>
+    <div class="ti">
+      <div class="tm">10:30-13:30</div>
+      <h4>🏖️ Bondi Beach 海滩漫步</h4>
+      <p>澳洲最著名海滩，Bondi to Bronte海岸步道（可选）</p>
+    </div>
+    <div class="ti">
+      <div class="tm">14:00</div>
+      <h4>🚗 返回酒店</h4>
+      <p>下午酒店泳池与休息</p>
+    </div>
+    <div class="ti hi">
+      <div class="tm">19:00</div>
+      <h4>💆 水疗或健身</h4>
+      <p>健身中心开放至22:00</p>
+    </div>
+  </div>
+  <div class="panel" data-panel="5">
+    <div class="callout"><b>今日主题：</b>悉尼-墨尔本 · 转场日</div>
+    <div class="ti">
+      <div class="tm">上午</div>
+      <h4>🏨 Park Hyatt 退房</h4>
+      <p>12:00前退房，行李寄存</p>
+    </div>
+    <div class="ti">
+      <div class="tm">中午</div>
+      <h4>✈️ 悉尼-墨尔本航班</h4>
+      <p>SYD→MEL，飞行1.5小时，澳航/维珍蓝天天有班</p>
+    </div>
+    <div class="ti">
+      <div class="tm">下午</div>
+      <h4>🏨 入住 Park Hyatt Melbourne</h4>
+      <p>East Melbourne，48㎡基础客房，城市或花园景观</p>
+      <div class="lks"><a class="lk" href="https://www.hyatt.com/park-hyatt/zh-CN/melph-park-hyatt-melbourne" target="_blank">📍 酒店官网</a></div>
+    </div>
+    <div class="ti">
+      <div class="tm">傍晚</div>
+      <h4>🚶 酒店周边散步</h4>
+      <p>菲茨罗伊花园、Treasury Gardens，酒店步行5分钟</p>
+    </div>
+  </div>
+  <div class="panel" data-panel="6">
+    <div class="callout"><b>今日主题：</b>墨尔本度假日 · 泳池与水疗</div>
+    <div class="ti">
+      <div class="tm">08:00-10:00</div>
+      <h4>🍳 酒店早餐</h4>
+      <p>Park Dining Room，面向花园</p>
+    </div>
+    <div class="ti hi">
+      <div class="tm">10:30-12:00</div>
+      <h4>🏊 25米恒温泳池</h4>
+      <p>意大利马赛克瓷砖泳池，阳光露台</p>
+    </div>
+    <div class="ti hi">
+      <div class="tm">14:00-16:00</div>
+      <h4>💆 九层水疗中心</h4>
+      <p>六个护理空间，含情侣套房，需提前预约</p>
+    </div>
+    <div class="ti">
+      <div class="tm">17:00-19:00</div>
+      <h4>🛍️ 柯林斯街购物（可选）</h4>
+      <p>步行4分钟，精品店街区</p>
+    </div>
+    <div class="ti">
+      <div class="tm">19:30</div>
+      <h4>🍽️ Radii 餐厅晚餐</h4>
+      <p>酒店米其林级餐厅</p>
+    </div>
+  </div>
+  <div class="panel" data-panel="7">
+    <div class="callout"><b>今日主题：</b>大洋路一日游 · 十二门徒</div>
+    <div class="ti">
+      <div class="tm">06:30</div>
+      <h4>🚌 酒店接送</h4>
+      <p>拼团一日游，中文导游，约8小时行程</p>
+      <div class="lks"><a class="lk" href="https://www.klook.com/zh-CN/activity/1820-great-ocean-road-day-tour-melbourne/" target="_blank">🎫 Klook预订</a></div>
+    </div>
+    <div class="ti">
+      <div class="tm">全天</div>
+      <h4>🌊 大洋路沿途景点</h4>
+      <p>托尔基（冲浪小镇）→Loch Ard峡谷→十二门徒岩→Gibson Steps</p>
+    </div>
+    <div class="ti">
+      <div class="tm">18:30</div>
+      <h4>🏨 返回酒店</h4>
+      <p>晚餐自理或酒店送餐</p>
+    </div>
+  </div>
+  <div class="panel" data-panel="8">
+    <div class="callout"><b>今日主题：</b>菲利普岛 · 企鹅归巢</div>
+    <div class="ti">
+      <div class="tm">12:00</div>
+      <h4>🚌 酒店接送出发</h4>
+      <p>下午团，中文导游，往返约9小时</p>
+      <div class="lks"><a class="lk" href="https://www.klook.com/zh-CN/activity/188815-phillip-island-and-penguin-parade-day-tour-from-melbourne/" target="_blank">🎫 预订</a></div>
+    </div>
+    <div class="ti">
+      <div class="tm">下午</div>
+      <h4>🏖️ 布莱顿彩虹小屋</h4>
+      <p>Brighton Beach标志性彩色小屋拍照</p>
+    </div>
+    <div class="ti">
+      <div class="tm">傍晚</div>
+      <h4>🐧 企鹅归巢奇观</h4>
+      <p>世界最小神仙企鹅归巢，约18:00-19:30（夏令时），禁止拍照</p>
+    </div>
+    <div class="ti">
+      <div class="tm">21:00</div>
+      <h4>🏨 返回酒店</h4>
+      <p>夜宵或休息</p>
+    </div>
+  </div>
+  <div class="panel" data-panel="9">
+    <div class="callout"><b>今日主题：</b>市区漫步 · 联邦广场</div>
+    <div class="ti hi">
+      <div class="tm">09:00-11:00</div>
+      <h4>🏊 泳池与早餐</h4>
+      <p>酒店设施最后一次尽情享用</p>
+    </div>
+    <div class="ti">
+      <div class="tm">11:30-14:00</div>
+      <h4>🎨 联邦广场与弗林德斯街</h4>
+      <p>步行或电车15分钟，墨尔本地标建筑，周边咖啡文化</p>
+    </div>
+    <div class="ti">
+      <div class="tm">14:30-17:00</div>
+      <h4>🌳 皇家植物园</h4>
+      <p>亚拉河畔，世界顶级植物园之一</p>
+    </div>
+    <div class="ti">
+      <div class="tm">18:00</div>
+      <h4>🍽️ 酒店告别晚餐</h4>
+      <p>Radii或客房送餐</p>
+    </div>
+  </div>
+  <div class="panel" data-panel="10">
+    <div class="callout"><b>今日主题：</b>返程日 · 墨尔本-成都</div>
+    <div class="ti">
+      <div class="tm">上午</div>
+      <h4>🏨 退房</h4>
+      <p>12:00前退房，行李寄存可延长至下午</p>
+    </div>
+    <div class="ti">
+      <div class="tm">中午</div>
+      <h4>🛍️ 最后采购</h4>
+      <p>酒店周边或DFS免税店</p>
+    </div>
+    <div class="ti">
+      <div class="tm">下午</div>
+      <h4>✈️ 墨尔本-成都航班</h4>
+      <p>MEL→CTU，川航或国航，飞行约10小时</p>
+    </div>
+    <div class="ti">
+      <div class="tm">次日清晨</div>
+      <h4>🏠 抵达成都</h4>
+      <p>时差回调，2月15日早晨到家</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 酒店详情 -->
+<section id="hotels" class="section">
+  <div class="s-head"><span class="idx">03</span><h2>酒店详情</h2></div>
+  
+  <h3 style="color:#667eea; margin-top:20px;">🏨 悉尼柏悦酒店 Park Hyatt Sydney</h3>
+  <p><b>位置：</b>The Rocks（岩石区），7 Hickson Road，步行5分钟到悉尼歌剧院</p>
+  <p><b>设施：</b>室内恒温泳池、The Spa水疗中心（La Mer护理/iKOU疗法）、24小时健身中心、海港景观餐厅</p>
+  <p><b>房型推荐：</b>Harbour View Room（海港景观客房），可俯瞰歌剧院与海港大桥</p>
+  <p><b>预订：</b><a href="https://www.hyatt.com/park-hyatt/zh-CN/sydph-park-hyatt-sydney" target="_blank">官网直订</a> 或 Booking/Agoda</p>
+  <div class="callout">提示：水疗需提前1-2天预约，旺季建议入住当天即预约后续时段。</div>
+  
+  <h3 style="color:#667eea; margin-top:30px;">🏨 墨尔本柏悦酒店 Park Hyatt Melbourne</h3>
+  <p><b>位置：</b>East Melbourne，1 Wellington Parade，距CBD步行10分钟，邻近菲茨罗伊花园</p>
+  <p><b>设施：</b>25米恒温泳池（意大利马赛克瓷砖）、九层水疗中心（六个护理空间含情侣套房）、Radii餐厅</p>
+  <p><b>房型推荐：</b>基础客房已达48㎡，比多数城市套房更宽敞，带独立起居区</p>
+  <p><b>预订：</b><a href="https://www.hyatt.com/park-hyatt/zh-CN/melph-park-hyatt-melbourne" target="_blank">官网直订</a></p>
+  <div class="callout">提示：墨尔本板球场（MCG）和罗德·拉沃竞技场数分钟可达，如遇赛事可顺道观赛。</div>
+</section>
+
+<!-- 04 景点汇总 -->
+<section id="sights" class="section">
+  <div class="s-head"><span class="idx">04</span><h2>景点汇总</h2></div>
+  
+  <h3 style="color:#667eea;">悉尼景点</h3>
+  <table class="sights">
+    <tr><th>景点</th><th>安排</th><th>门票/预约</th><th>建议</th></tr>
+    <tr><td>悉尼歌剧院</td><td>Day 3 上午</td><td>中文导览约AUD 42，<b>需官网提前订</b></td><td>步行5分钟，1小时导览</td></tr>
+    <tr><td>海港大桥</td><td>酒店景观已含</td><td>无需登桥，远观即可</td><td>房间或餐厅直视</td></tr>
+    <tr><td>岩石区</td><td>Day 1 傍晚</td><td>免费开放</td><td>历史街区，周末集市</td></tr>
+    <tr><td>邦迪海滩</td><td>Day 4 上午</td><td>免费，公交Opal卡</td><td>T4+333公交，往返2小时</td></tr>
+    <tr><td>环形码头</td><td>随时</td><td>免费</td><td>酒店步行3分钟</td></tr>
+  </table>
+  
+  <h3 style="color:#667eea; margin-top:30px;">墨尔本景点</h3>
+  <table class="sights">
+    <tr><th>景点</th><th>安排</th><th>门票/预约</th><th>建议</th></tr>
+    <tr><td>大洋路 & 十二门徒</td><td>Day 7 全天</td><td>拼团约AUD 100-150/人，<b>需提前2天订</b></td><td>往返8小时，中文导游</td></tr>
+    <tr><td>菲利普岛企鹅归巢</td><td>Day 8 下午</td><td>含General门票约AUD 120/人</td><td>夏令时约19:00归巢，<b>禁止拍照</b></td></tr>
+    <tr><td>联邦广场</td><td>Day 9 中午</td><td>免费</td><td>弗林德斯街站标志建筑</td></tr>
+    <tr><td>皇家植物园</td><td>Day 9 下午</td><td>免费</td><td>亚拉河畔，世界顶级</td></tr>
+    <tr><td>柯林斯街</td><td>Day 6 傍晚</td><td>购物街</td><td>酒店步行4分钟</td></tr>
+  </table>
+  
+  <div id="map"></div>
+  <p style="text-align:center; color:#666; margin-top:10px;">交互地图：悉尼与墨尔本主要景点位置</p>
+</section>
+
+<!-- 05 实用贴士 -->
+<section id="tips" class="section">
+  <div class="s-head"><span class="idx">05</span><h2>实用贴士</h2></div>
+  
+  <h3 style="color:#667eea;">📄 签证</h3>
+  <p><b>类型：</b>600类访客签证（Visitor visa），中国护照不能用ETA</p>
+  <p><b>费用：</b>基本申请费 AUD 250</p>
+  <p><b>申请：</b>通过 <a href="https://immi.homeaffairs.gov.au/" target="_blank">ImmiAccount</a> 在线申请，建议提前1个月</p>
+  <p><b>材料：</b>护照、照片、行程单、酒店预订、资金证明（银行流水）、在职证明</p>
+  <div class="callout warn">注意：2025年11月起，持澳洲签证可免签入境新西兰停留3个月，如有兴趣可顺道规划。</div>
+  
+  <h3 style="color:#667eea; margin-top:25px;">✈️ 航班</h3>
+  <p><b>成都-悉尼：</b>川航3U8915（天府机场直飞）或国航，飞行约10.5小时</p>
+  <p><b>悉尼-墨尔本：</b>澳航/维珍澳洲，每日数十班，飞行1.5小时，票价约AUD 100-200</p>
+  <p><b>时差：</b>悉尼/墨尔本比中国快3小时（夏令时期间）</p>
+  
+  <h3 style="color:#667eea; margin-top:25px;">🌡️ 天气</h3>
+  <p><b>2月悉尼：</b>夏季，平均气温18-26°C，偶有阵雨，需防晒</p>
+  <p><b>2月墨尔本：</b>夏季，平均气温14-26°C，天气多变（"一天四季"），建议带薄外套</p>
+  
+  <h3 style="color:#667eea; margin-top:25px;">💳 货币与支付</h3>
+  <p><b>货币：</b>澳元（AUD），汇率约1 AUD = 4.7 CNY（2026年10月）</p>
+  <p><b>支付：</b>信用卡（Visa/Master）广泛接受，部分商户支持银联/支付宝</p>
+  <p><b>现金：</b>建议准备少量现金（AUD 200-300）应急</p>
+  
+  <h3 style="color:#667eea; margin-top:25px;">🚇 交通</h3>
+  <p><b>悉尼：</b>Opal卡（类似一卡通），便利店/车站可购买充值，单程约AUD 3-5</p>
+  <p><b>墨尔本：</b>Myki卡，电车（Tram）市区免费区（Free Tram Zone）</p>
+  <p><b>出租车/网约车：</b>Uber、DiDi在两城市均可用</p>
+  
+  <h3 style="color:#667eea; margin-top:25px;">📱 通讯</h3>
+  <p><b>SIM卡：</b>机场可购Optus/Telstra预付卡，10天套餐约AUD 30-50</p>
+  <p><b>国内卡漫游：</b>中国移动/联通有澳洲漫游包，约30元/天</p>
+  
+  <div class="callout">
+    <b>预算参考（2人10天）：</b><br>
+    • 酒店：Park Hyatt 悉尼5晚+墨尔本5晚，约 AUD 5,000-7,000<br>
+    • 机票：成都往返 + 悉尼-墨尔本，约 CNY 12,000-18,000<br>
+    • 餐饮：豪华餐厅人均AUD 80-150，日常AUD 30-50<br>
+    • 一日游：大洋路+菲利普岛，约 AUD 500<br>
+    • 签证+保险+杂费：约 CNY 3,000<br>
+    <b>总预算：约 CNY 50,000-70,000（2人）</b>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <p>本攻略生成于 2026年10月 | 图片与信息以酒店/景点官网实时为准</p>
+  <p>祝旅途愉快！🌏✨</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// Tab切换
+document.querySelectorAll('.tab').forEach(tab => {{
+  tab.addEventListener('click', () => {{
+    const day = tab.dataset.day;
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.querySelector(`[data-panel="${{day}}"]`).classList.add('active');
+  }});
+}});
+
+// 地图
+const map = L.map('map').setView([-33.8688, 151.2093], 4);
+L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
+  attribution: '© OpenStreetMap'
+}}).addTo(map);
+
+// 悉尼景点
+L.marker([-33.8568, 151.2153]).addTo(map).bindPopup('<b>悉尼歌剧院</b>');
+L.marker([-33.8523, 151.2108]).addTo(map).bindPopup('<b>海港大桥</b>');
+L.marker([-33.8915, 151.2767]).addTo(map).bindPopup('<b>邦迪海滩</b>');
+L.marker([-33.8599, 151.2111]).addTo(map).bindPopup('<b>Park Hyatt Sydney</b><br>岩石区酒店').openPopup();
+
+// 墨尔本景点
+L.marker([-37.8183, 144.9671]).addTo(map).bindPopup('<b>联邦广场</b>');
+L.marker([-37.8304, 144.9796]).addTo(map).bindPopup('<b>皇家植物园</b>');
+L.marker([-37.8136, 144.9631]).addTo(map).bindPopup('<b>Park Hyatt Melbourne</b><br>East Melbourne酒店');
+L.marker([-38.5267, 145.1656]).addTo(map).bindPopup('<b>菲利普岛</b><br>企鹅归巢');
+L.marker([-38.6643, 143.1047]).addTo(map).bindPopup('<b>十二门徒岩</b><br>大洋路');
+</script>
+
+</body>
+</html>
